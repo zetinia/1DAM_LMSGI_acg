@@ -6,14 +6,17 @@
     <title>Document</title>
 </head>
 <body>
+    <!--El metodo post sirve como elemento para enviar los datos al lugar donde con anterioridad has indicado que vayan de manera oculta--> <!--Method indica de que manera se va a enviar la info, en este caso con post (de forma oculta)-->
     <form action="proceso.php" method="post"></form>
-
+<!--La etiqueta fieldset es para agrupar varios campos en uno solo-->
     <fieldset>
+        <!--La funcion legend sirve para poner nombre al campo fieldset-->
         <legend>Datos Personales</legend>
+        <!--La etiqueta type indica el tipo del campo, puede ser de texto (text), de número (number)etc-->
         <p>Nombre: <input type="text"></p>
         <p>Apellidos: <input type="text"></p>
         <p>Edad: <input type="number" size="10"></p>
-
+        <!--La etiqueta radio sirve para elegir unas sola opcion de varias y la etiqueta name indica el nombre del campo-->
         <p>
             <input type="radio" name="sexo" value="h">Hombre
             <input type="radio" name="sexo" value="m">Mujer
@@ -26,6 +29,7 @@
            <p> Correo Electronico<input type="email"></p>
            <p> Código Postal <input type="number"></p>
            <p> Dirección <input type="text"></p>
+           <!--La etiqueta name indica el control de manera única y la etiqueta option para poder hacer una lista desplegable-->
            <p> Ciudad <select name="opciones" id ="1">
             <p>Ciudades de España</p></p>
            <p> <option value="1">Jaén</option></p>
@@ -41,6 +45,7 @@
         <p>Estado civil:</p>
         <input type="radio" name="estado civil" value="c">Casado
         <input type="radio" name="estado civil" value="nc">No casado
+        <!--El campo checkbox sirve para poder elegir varias opciones -->
         <p>Hobbies: </p>
         <input type="checkbox" name="opcion1">Jugar videojuegos<br>
         <input type="checkbox" name="opcion2">Leer libros<br>
@@ -50,6 +55,7 @@
         
     </fieldset>
     <fieldset>
+        <!--Textarea es un campo para poder añadir comentarios y que puedes añadirle cuantas lineas de largo y cuantas filas puedes ponerle para escribir con rows y cols, placeholder es la etiqueta que sirve para poner una frase predeterminada antes de empezar a escribir -->
         <legend>Comentarios Adicionales</legend>
         <textarea rows="4" cols="50" placeholder="Aqui puedes escribir..."></textarea>
     </fieldset>
