@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+<header> 
+       <nav>
+        <a href="Index.html">Pagina principal</a>
+        <a href="Multimedia.html">Multimedia</a>
+       </nav>
+    </header>
+    <form action="proceso.php " method="post">
+        
+        <fieldset>
+            <legend><b>Datos personales</b></legend>
+        <p><b>Fecha:</b> <input type="date" name="Fecha"></p>
+        <p><b>Nombre:</b><input type="text" name="nombre" required></p>
+        <p><b>Edad:</b><input type="text" name="edad" size="3"></p>
+        <p><b>Correo:</b><input  type="email" name="email" required placeholder="Email requerido"></p>
+        </fieldset>
+        <fieldset>
+        <legend><b>Datos de interes</b></legend>
+        <p><b>¿Estas casado?</b></p>
+        <input type="radio" name="p1" value="si">Si
+        <input type="radio" name="p1" value="no">No 
+        <p><b>Numero de hijos:</b>
+        <input type="number" min="0" max="7" size="3" name="hijos"></p>
+        <p><b>¿Cual es tu color favorito</b> <input type="color"> </p>
+        <p><b>Nivel de programación</b><meter value="20" max="100"></meter> 100%</p>
+        <p><b>Etiqueta url</b><input type="url" name="url" placeholder="Introduzca su pagina url"></p>
+            </fieldset>
+            <input type="button" value="enviar">
+            <input type="button" value="borrar">
+    </form>
+</body>
+</html>
