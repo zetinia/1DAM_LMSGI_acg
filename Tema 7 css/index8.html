@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #titulo {text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: 3px;
+        color:blue}
+
+        table{
+            border-collapse: collapse;
+            width: 50%;
+            margin-left: 25%;
+            border: solid 3px black;
+
+        }
+
+        th{
+            text-align: left;
+            padding: 8% 8px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.5rem;
+            background-color: #4caf50;
+            color: white;
+        }
+        td{
+            text-align: left;
+            padding: 8px;
+            font-size: 1.5rem;
+        }
+        .numero {
+            text-align: right;
+        }
+        tr{
+            border: solid 1px black;}
+            tr:nth-child(even){
+                background-color: #f2f2f2
+            }
+
+        tr:hover{
+            background-color: rgb(150, 150, 175);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 id="titulo">DESTINOS FRECUENTES</h1>
+    <table>
+        <tr>
+            <th>Destino</th>
+            <th>Origen</th>
+            <th class="numero">Precio medio</th>
+        </tr>
+        <td>Madrid</td>
+        <td>Malaga</td>
+        <td class="numero">120€</td>
+    </table>
+</body>
+</html>
