@@ -54,15 +54,63 @@
         margin: 5px;}
 
 
-        #parte2_2{float: left;
+        #parte2_2 {float: left;
         width: 300px;
         height: 260px;
         padding: 10px;
         background-color: #f5ecce;
         margin: 5px;}
+
+        #parte3 {
+            font-weight: bold;
+            text-align: center;
+            padding: 3px;
+            color: white;
+            margin: 5px;
+            height: 30px;
+            border-bottom: solid 5px #0f5572;
+            width: 632px;
+            margin-left: 30px;
+            margin-top: 15px;
+            border-radius: 25px;
+            background-image: linear-gradient(#043304, #1a7e9b);
+        }
+
+        .color_especial {color: #1a7e9b;
+        font-size: 1.25rem;}
+
+        #chequeo {font-weight: bold;
+        font-size: 1.35rem;
+        color: #0f5572;
+        padding-right: 3px;}
+
+        img {height: 250px;
+            width: 250px;
+            position: absolute;
+            margin-top: 5px;
+            margin-left: -70px;
+            z-index: -1;}
     </style>
 </head>
 <body>
-    
+    <div id="tarjeta">
+        <div id="#parte1">
+            <div id="izquierda">
+                <p class="apartado" id="apartado1">LA MASCARILLA</p>
+                <p class="apartado" id="apartado2">ES OBLIGATORIA REY</p>
+                <p id="cont_inicial">En la <b>via publica</b> y en <b>cualquier espacio de uso publico</b>o que se encuentre abierto al publico, siempre que no sea posible mantener una distancia de seguridad entre las personas de al menos dos metros</p><br>
+            </div>
+        </div>
+    </div>
+    <div id="parte2">
+        <div id="parte2_1">
+            <b><span class="color_especial">RECUERDA</span></b>
+            <hr>
+            <p><span id="chequeo">&#x2714</span>Para<b>menores de 6 años </b></p><p><span id="chequeo">&#x2714</span>Cuando sea contraproducente por <b>motivos de salud</b></p><p><span id="chequeo">&#x2714</span>En actividades que por su naturaleza <b>impida su uso</b></p><p><span id="chequeo">&#x2714</span>Por causas de <b>fuerza mayor</b></p>
+        </div>
+    </div>
+    <div id="parte3">
+        Si todos cumplimos, nadie se contagia. Cuida de ti, cuida de todos
+    </div>
 </body>
 </html>
